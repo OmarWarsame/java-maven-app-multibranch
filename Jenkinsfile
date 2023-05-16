@@ -29,7 +29,9 @@ pipeline {
         stage("deploy") {
             steps {
                 script {
-                    echo "deploying"
+                   sshagent(['ec2-server-key']) { 
+                    // some block
+
                     //gv.deployApp()
                 }
             }
