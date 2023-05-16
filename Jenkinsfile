@@ -31,7 +31,7 @@ pipeline {
                 script {
                    sshagent(['ec2-server-key']) { 
                     // some block
-
+                   {
                     //gv.deployApp()
                 }
             }
